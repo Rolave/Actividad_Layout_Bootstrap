@@ -5,52 +5,83 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Desafío Latam</title>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-  <div class="container">
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <a class="navbar-brand" href="index.html">
-        <img src="./images/latam_logo.png" alt="Desafío Latam Logo">
-      </a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="#">Equipo</a>
-          </li>
-          <li class="nav-item active">
-            <a class="nav-link" href="#">Blog</a>
-          </li>
-          <li class="nav-item active">
-            <a class="nav-link" href="#">Contacto</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
-  </div>
   <section class="banner">
     <header class="header">
-      <div class="container clearfix header__cont">
-        <div class="header__cont-logo">
-          <img src="./images/latam_logo.png" alt="">
-        </div>
-        <nav class="header__cont-menu">
-          <ul class="clearfix">
+      <nav class="navbar">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="index.html">
+              <img src="./images/latam_logo.png" alt="Desafío Latam Logo">
+            </a>
+          </div>
+          <ul class="nav navbar-nav navbar-right">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#">Inicio</a></li>
             <li><a href="#">Equipo</a></li>
             <li><a href="#">Blog</a></li>
             <li><a href="#">Contacto</a></li>
           </ul>
-        </nav>
-      </div>
+        </div>
+      </nav>
     </header>
-    <h2>Comienza una nueva vida y únete al mundo tecnológico</h2>
-    <a class="btn blue" href="#">Comienza acá!</a>
-    <a class="btn green" href="#">Más info</a>
-    <h3>Hay una escasez gigante de desarrolladores en el mundo y más aún en Latinoamérica, se necesitan más desarrolladores y tú puedes ser uno!</h3>
+    <div id="mainCarousel" class="carousel slide" data-ride="carousel">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#mainCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#mainCarousel" data-slide-to="1"></li>
+        <li data-target="#mainCarousel" data-slide-to="2"></li>
+      </ol>
+
+      <!-- Wrapper for slides -->
+      <div class="carousel-inner" role="listbox">
+        <div class="item active">
+          <div class="carousel-content">
+            <h2>Comienza una nueva vida y únete al mundo tecnológico</h2>
+            <a class="btn btn-primary" href="#">Comienza acá!</a>
+            <a class="btn btn-success" href="#">Más info</a>
+            <h3>Hay una escasez gigante de desarrolladores en el mundo y más aún en Latinoamérica, se necesitan más desarrolladores y tú puedes ser uno!</h3>
+          </div>
+        </div>
+
+        <div class="item">
+          <div class="carousel-content">
+            <h2>Comienza una nueva vida y únete al mundo tecnológico</h2>
+            <a class="btn btn-primary" href="#">Comienza acá!</a>
+            <a class="btn btn-success" href="#">Más info</a>
+            <h3>Hay una escasez gigante de desarrolladores en el mundo y más aún en Latinoamérica, se necesitan más desarrolladores y tú puedes ser uno!</h3>
+          </div>
+        </div>
+
+        <div class="item">
+          <div class="carousel-content">
+            <h2>Comienza una nueva vida y únete al mundo tecnológico</h2>
+            <a class="btn btn-primary" href="#">Comienza acá!</a>
+            <a class="btn btn-success" href="#">Más info</a>
+            <h3>Hay una escasez gigante de desarrolladores en el mundo y más aún en Latinoamérica, se necesitan más desarrolladores y tú puedes ser uno!</h3>
+          </div>
+        </div>
+      </div>
+
+      <!-- Left and right controls -->
+      <a class="left carousel-control" href="#mainCarousel" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="right carousel-control" href="#mainCarousel" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
   </section>
   <div class="container bootcamp">
     <div class="row">
@@ -67,7 +98,7 @@
         <div class="col-sm-12">
           <h2>Solicita información e inscríbete</h2>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi vel adipisci earum reiciendis sint quo vitae asperiores, repellat nulla, dignissimos, maiores dolore deleniti laboriosam, veritatis iure quia laborum minima cupiditate!</p>
-          <a href="#" class="btn blue">Inscríbete!</a>
+          <a href="#" class="btn btn-primary">Inscríbete!</a>
           <p>Vive la experiencia Desafío Latam!</p>
         </div>
       </div>
@@ -88,9 +119,11 @@
         <div class="col-md-8">
           <h5>Suscribete</h5>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum sed nam alias qui voluptatibus, vel illo, aperiam odit repellendus, reiciendis esse nihil. Atque odio sint, neque magnam dolorum fugit amet.</p>
-          <form class="" action="index.html" method="post">
-            <input type="email" name="" value="" placeholder="Ingresa tu email...">
-            <button type="submit" name="button">Enviar</button>
+          <form>
+            <div class="form-group">
+              <input type="email" class="form-control mb-2" id="inlineFormInput" placeholder="Ingresa tu email...">
+            </div>
+            <button type="submit" class="btn btn-outline-secondary mb-2">Submit</button>
           </form>
         </div>
       </div>
@@ -105,8 +138,9 @@
       </div>
     </div>
   </footer>
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 </body>
 </html>

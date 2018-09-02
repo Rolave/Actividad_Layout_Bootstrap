@@ -6,6 +6,21 @@ green = #58b02d
 light-gray = #fafafa
 mid-gray = #777777
 */
+/* Media Queries */
+/*
+Small
+@media only screen and (max-width: 480px) {
+}
+Medium
+@media only screen and (max-width: 767px) {
+}
+Large
+@media only screen and (max-width: 991px) {
+}
+Extra large
+@media only screen and (max-width: 1199px) {
+}
+*/
 * {
   box-sizing: border-box;
   margin: 0;
@@ -24,64 +39,76 @@ body {
   clear: both;
   display: table;
 }
-.btn {
-  display: inline-block;
-  padding: 10px;
-  text-decoration: none;
-}
-.blue {
-  color: white;
-  background-color: #337ab7;
-  border-radius: 3px;
-}
-.green {
-  color: white;
-  background-color: #58b02d;
-  border-radius: 3px;
-}
 .header {
-  padding: 30px 15px;
+  position: absolute;
   width: 100%;
+  z-index: 1;
 }
-.header__cont-logo {
-  float: left;
+.navbar-brand {
+  height: auto;
 }
-.header__cont-logo img {
+.navbar-brand img {
+  display: block;
   height: 50px;
   vertical-align: top;
   width: auto;
 }
-.header__cont-menu {
-  float: right;
+@media only screen and (max-width: 767px) {
+  .navbar-nav {
+    background-color: black;
+  }
 }
-.header__cont-menu ul {
-  list-style-type: none;
-}
-.header__cont-menu ul li {
-  float: left;
-}
-.header__cont-menu ul li + li {
-  margin-left: 10px;
-}
-.header__cont-menu ul li a {
+.navbar-nav li a {
   color: #777777;
   line-height: 50px;
   text-decoration: none;
   text-transform: uppercase;
   transition: all .3s ease-in-out;
 }
-.header__cont-menu ul li a:hover {
-  color: white;
+.navbar-nav li a:hover {
+  background-color: transparent;
+  color: #58b02d;
 }
-.banner {
-  background-image: url("../images/bg.jpeg");
+@media only screen and (max-width: 767px) {
+  .navbar-nav li a {
+    padding: 0 25px;
+  }
+}
+#mainCarousel {
+  background-color: black;
+}
+.item {
+  background-image: url("../images/slide-01-bg.jpg");
   background-position: 0% 50%;
   background-repeat: no-repeat;
   background-size: cover;
+  height: 600px;
   padding-bottom: 50px;
   text-align: center;
 }
-.banner h2{
+@media only screen and (max-width: 767px) {
+  .item {
+    height: 100vh;
+  }
+}
+.item:nth-child(2) {
+  background-image: url("../images/slide-02-bg.jpg");
+}
+.item:nth-child(3) {
+  background-image: url("../images/slide-03-bg.jpg");
+}
+.carousel-content {
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  left: 50%;
+}
+@media only screen and (max-width: 767px) {
+  .carousel-content {
+    width: 80%;
+  }
+}
+.carousel-content h2{
   color: white;
   font-size: 3em;
   font-weight: 300;
@@ -90,9 +117,27 @@ body {
   max-width: 600px;
   text-align: center;
   text-transform: uppercase;
-  width: 50%;
+  width: 100%;
 }
-.banner h3 {
+@media only screen and (max-width: 1199px) {
+  .carousel-content h2{
+    font-size: 2.75em;
+    max-width: auto;
+    width: 75%;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .carousel-content h2{
+    font-size: 2.5em;
+    width: auto;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .carousel-content h2{
+    font-size: 1.5em;
+  }
+}
+.carousel-content h3 {
   color: white;
   font-size: 1em;
   font-weight: 300;
@@ -101,6 +146,11 @@ body {
   max-width: 900px;
   text-align: center;
   width: 50%;
+}
+@media only screen and (max-width: 767px) {
+  .carousel-content h3{
+    width: auto;
+  }
 }
 .bootcamp {
   padding-top: 60px;
